@@ -7,7 +7,7 @@ export const Education: React.FC = () => {
   return (
     <div className="relative min-h-screen pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        
+
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-medium">
@@ -28,7 +28,7 @@ export const Education: React.FC = () => {
               key={edu.id}
               className="p-8 sm:p-10 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 backdrop-blur-md transition-all duration-300 shadow-2xl space-y-8"
             >
-              
+
               {/* Header */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
                 <div>

@@ -8,7 +8,7 @@ export const Certifications: React.FC = () => {
   return (
     <div className="relative min-h-screen pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        
+
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-medium">
@@ -31,7 +31,7 @@ export const Certifications: React.FC = () => {
             >
               <div>
                 {/* Badge Image Display */}
-                <div 
+                <div
                   className="relative w-36 h-36 mx-auto mb-6 flex items-center justify-center p-3 rounded-2xl bg-slate-950/80 border border-slate-800/80 group-hover:border-cyan-500/40 transition-colors shadow-lg cursor-pointer"
                   onClick={() => setSelectedImage(cert.badge)}
                 >
@@ -54,13 +54,12 @@ export const Certifications: React.FC = () => {
                 {/* Status Pill */}
                 <div className="mb-3">
                   <span
-                    className={`inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold tracking-wide uppercase ${
-                      cert.status === 'Completed'
+                    className={`inline-block px-3 py-1 rounded-full text-[11px] font-mono font-semibold tracking-wide uppercase ${cert.status === 'Completed'
                         ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30'
                         : cert.status === 'In Progress'
-                        ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30'
-                        : 'bg-amber-500/10 text-amber-400 border border-amber-500/30'
-                    }`}
+                          ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30'
+                          : 'bg-amber-500/10 text-amber-400 border border-amber-500/30'
+                      }`}
                   >
                     {cert.status === 'Completed' ? '✓ ' : cert.status === 'In Progress' ? '⌛ ' : '📘 '}
                     {cert.status}
@@ -108,7 +107,7 @@ export const Certifications: React.FC = () => {
 
         {/* Image Modal Lightbox */}
         {selectedImage && (
-          <div 
+          <div
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/90 backdrop-blur-md animate-fadeIn"
             onClick={() => setSelectedImage(null)}
           >
