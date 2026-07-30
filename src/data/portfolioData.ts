@@ -212,6 +212,59 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   }
 ];
 
+export const EDUCATION_DATA: EducationItem[] = [
+  {
+    id: "bsc-cybersecurity",
+    degree: "B.Sc. in Computer Networks & Cybersecurity",
+    institution: "University of Ghana",
+    period: "2024 - 2027",
+    expectedGraduation: "Dec 2027",
+    gpa: "3.78 / 4.00",
+    coursework: [
+      "Advanced Network Design",
+      "Cybersecurity Fundamentals",
+      "Cloud Infrastructure & Security",
+      "Data Communications",
+      "Linux System Administration",
+      "Network Automation with Python"
+    ],
+    highlights: [
+      "Dean's list for academic excellence 2025",
+      "Led a student team to design a campus network lab topology",
+      "Completed CCNA-level practical labs with perfect score"
+    ]
+  }
+];
+
+export const EXPERIENCE_DATA: ExperienceItem[] = [
+  {
+    id: "network-lab-assistant",
+    role: "Network Lab Assistant",
+    organization: "University IT Department",
+    period: "Jan 2025 - Present",
+    type: "University Practical Work",
+    description: [
+      "Maintained and configured lab routers and switches for student networking exercises.",
+      "Supported VLAN, OSPF, and BGP topology troubleshooting across multiple lab networks.",
+      "Automated backup and configuration snapshots for lab devices using Bash scripts."
+    ],
+    technologies: ["Cisco IOS", "Packet Tracer", "Wireshark", "Linux", "Bash"]
+  },
+  {
+    id: "cybersecurity-volunteer",
+    role: "Volunteer Cybersecurity Analyst",
+    organization: "Campus Security Club",
+    period: "Jun 2024 - Dec 2024",
+    type: "Volunteer IT Support",
+    description: [
+      "Performed network vulnerability assessments and guided peers through secure configuration best practices.",
+      "Monitored intrusion detection alerts and documented recommended remediation steps.",
+      "Delivered hands-on workshops on network hardening and secure Wi-Fi deployment."
+    ],
+    technologies: ["Snort", "Linux", "Metasploit", "Cisco Packet Tracer", "Wireshark"]
+  }
+];
+
 export const ACHIEVEMENTS_DATA: Achievement[] = [
   {
     id: "packet-tracer-champion",

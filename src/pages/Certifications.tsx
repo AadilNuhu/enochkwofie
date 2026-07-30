@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, ExternalLink, ShieldCheck, Clock, CheckCircle2 } from 'lucide-react';
+import { Award, ExternalLink, ShieldCheck, Clock } from 'lucide-react';
 import { CERTIFICATIONS_DATA } from '../data/portfolioData';
 
 export const Certifications: React.FC = () => {

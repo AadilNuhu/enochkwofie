@@ -1,6 +1,7 @@
 import React from 'react';
 import { GraduationCap, BookOpen, Award, CheckCircle2, Building2 } from 'lucide-react';
 import { EDUCATION_DATA } from '../data/portfolioData';
+import type { EducationItem } from '../types/portfolio';
 
 export const Education: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const Education: React.FC = () => {
 
         {/* Education Details */}
         <div className="max-w-4xl mx-auto space-y-8">
-          {EDUCATION_DATA.map((edu) => (
+          {EDUCATION_DATA.map((edu: EducationItem) => (
             <div
               key={edu.id}
               className="p-8 sm:p-10 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 backdrop-blur-md transition-all duration-300 shadow-2xl space-y-8"
@@ -53,7 +54,7 @@ export const Education: React.FC = () => {
                   <BookOpen className="w-5 h-5 text-cyan-400" /> Core Relevant Coursework
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {edu.coursework.map((course) => (
+                  {edu.coursework.map((course: string) => (
                     <div
                       key={course}
                       className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-xs sm:text-sm text-slate-300 flex items-center gap-2.5"
@@ -71,7 +72,7 @@ export const Education: React.FC = () => {
                   <Award className="w-5 h-5 text-purple-400" /> Academic Achievements & Honors
                 </h3>
                 <ul className="space-y-2.5 text-sm text-slate-300">
-                  {edu.highlights.map((h, i) => (
+                  {edu.highlights.map((h: string, i: number) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                       <span>{h}</span>

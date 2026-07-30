@@ -1,6 +1,7 @@
 import React from 'react';
 import { Briefcase, Terminal, Calendar, CheckCircle2 } from 'lucide-react';
 import { EXPERIENCE_DATA, ACHIEVEMENTS_DATA } from '../data/portfolioData';
+import type { ExperienceItem } from '../types/portfolio';
 
 export const Experience: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ export const Experience: React.FC = () => {
           </h2>
 
           <div className="grid grid-cols-1 gap-8">
-            {EXPERIENCE_DATA.map((exp) => (
+            {EXPERIENCE_DATA.map((exp: ExperienceItem) => (
               <div
                 key={exp.id}
                 className="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 backdrop-blur-md transition-all duration-300 shadow-xl group"
@@ -51,7 +52,7 @@ export const Experience: React.FC = () => {
 
                 {/* Bullets */}
                 <ul className="space-y-3 mb-6 text-sm text-slate-300 leading-relaxed">
-                  {exp.description.map((item, i) => (
+                  {exp.description.map((item: string, i: number) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-1" />
                       <span>{item}</span>
@@ -61,7 +62,7 @@ export const Experience: React.FC = () => {
 
                 {/* Tech Pills */}
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-800/60">
-                  {exp.technologies.map((tech) => (
+                  {exp.technologies.map((tech: string) => (
                     <span key={tech} className="px-3 py-1 rounded-lg text-xs font-mono bg-slate-800 text-cyan-300 border border-slate-700">
                       {tech}
                     </span>
