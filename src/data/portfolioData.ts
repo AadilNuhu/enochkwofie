@@ -1,4 +1,4 @@
-import type { Project, Skill, Certification, Achievement, Testimonial, BlogPost, GitHubRepo } from '../types/portfolio';
+import type { Project, Skill, Certification, Achievement, Testimonial, BlogPost, GitHubRepo, EducationItem, ExperienceItem } from '../types/portfolio';
 
 export const PERSONAL_INFO = {
   name: "Enoch Kwofie",
